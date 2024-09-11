@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.banner {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    background: url('/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y:center;
+}
+
+.heading {
+    font-size: 40px;
+}
+
+.input-box {
+    width: 400px;
+    display: flex;
+}
+
+.input {
+    flex: 4;
+    padding: 8px 12px;
+    border: 1px solid #0f2d40;
+    outline: none;
+    font-size: 16px;
+}
+
+.submit {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #0f2d40;
+    background: #0f2d40;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.todo-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    background: #d1dee69e;
+}
+
+.todos-wrapper {
+    flex: 1;
+    padding: 15px;
+}
+
+.todos-heading {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    cursor: pointer;
+    background: #ffff;
+}
+
+.todo:hover {
+    background-color: #f5f3f3;
+    transform: scale(1.01);
+    transition: all 0.2s;
+}
+
+.todo-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.edit-btn,.dlt-btn {
+    border: none;
+    background: #0f2d40;
+    color: #ffff;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.green {
+    background: #98ff98d9;
+    min-height:54vh;
+}
+
+.red {
+    background: #ff2d2d4f;
+    min-height: 54vh;
+}
